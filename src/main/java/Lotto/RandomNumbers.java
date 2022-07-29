@@ -29,7 +29,10 @@ public class RandomNumbers {
         chosenNumbersArray[4] = (int) betNumbersArray[9];
         chosenNumbersArray[5] = (int) betNumbersArray[11];
 
+        System.out.println("The drawn numbers are: ");
+
         for (int i:chosenNumbersArray) {
+
 
             System.out.print(i + "|");
 
