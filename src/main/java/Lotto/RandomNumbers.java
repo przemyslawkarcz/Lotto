@@ -1,52 +1,41 @@
 package Lotto;
 
-import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
 public class RandomNumbers {
 
-    public static void main(String[] args) {
-
-        randomNumbers();
-
-    }
-
-    public static void randomNumbers(){
+    public int[] generatesRandomNumbers(){
 
         Set<Integer> betNumbers = new HashSet<>();
-        //int[] betNumbersArray = new int[betNumbers.size()];
-        int counter = 0;
-        //do {
 
-            for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 20; i++) {
 
-                Random randomNumber = new Random();
-                int i1 = randomNumber.nextInt(50);
+            Random randomNumber = new Random();
+            int randNo = randomNumber.nextInt(50 - 1) + 1;
 
-                System.out.print(i1 + ", ");
-                counter++;
-                betNumbers.add(i1);
-
-            }
-
-        System.out.println("\ncounter: " + counter);
-        System.out.println();
-        System.out.println(betNumbers);
-
-        Object[] objects = betNumbers.toArray();
-
-        for (int i = 0; i < 6; i++) {
-
-            System.out.print(objects[i] + "|");
+            betNumbers.add(randNo);
 
         }
 
-        //}while (betNumbers.size()>5 && betNumbers.size()<7);
+        Object[] betNumbersArray = betNumbers.toArray();
+        int [] chosenNumbersArray = new int[6];
 
-        //System.out.println("\nbetNumbers:");
-        //System.out.println(betNumbers);
+        chosenNumbersArray[0] = (int) betNumbersArray[1];
+        chosenNumbersArray[1] = (int) betNumbersArray[3];
+        chosenNumbersArray[2] = (int) betNumbersArray[5];
+        chosenNumbersArray[3] = (int) betNumbersArray[7];
+        chosenNumbersArray[4] = (int) betNumbersArray[9];
+        chosenNumbersArray[5] = (int) betNumbersArray[11];
+
+        for (int i:chosenNumbersArray) {
+
+            System.out.print(i + "|");
+
+        }
+
+        return chosenNumbersArray;
 
     }
 
