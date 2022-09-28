@@ -22,7 +22,7 @@ public class Betting {
             noOfBetsGivenByUser = Verify.checksIfNumberIsInteger(scanner.nextLine());
         }catch (ExceptionChecksDataFormat exceptionChecksDataFormat){
             exceptionChecksDataFormat.getFriendlyMessage();
-            return ;
+            return ;//xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         }
 
         int counterOfBets = 0;
