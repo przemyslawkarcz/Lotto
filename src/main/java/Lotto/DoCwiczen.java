@@ -25,7 +25,7 @@ public class DoCwiczen {
             //int nextInt = random.nextInt(max - min) + min;
             int nextInt = random.nextInt(50 - 1) + 1;
 
-            if (nextInt == 0){
+            if (nextInt == 0) {
 
                 System.out.println("0!");
                 System.exit(0);
