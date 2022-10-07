@@ -1,10 +1,10 @@
 package Lotto.Inspect;
 
-public class ExceptionChecksDataFormat extends Exception{
+public class ExceptionChecksIntegerFormat extends Exception{
 
     String friendlyMessage;
 
-    public ExceptionChecksDataFormat(String friendlyMessage) {
+    public ExceptionChecksIntegerFormat(String friendlyMessage) {
 
         this.friendlyMessage = friendlyMessage;
 
