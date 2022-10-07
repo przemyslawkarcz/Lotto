@@ -1,12 +1,11 @@
 package Lotto;
 
-import Lotto.Inspect.ExceptionChecksDataFormat;
-import Lotto.RandomNumbers.RandomNumbers;
+import Lotto.Inspect.ExceptionChecksIntegerFormat;
 import Lotto.RandomNumbers.RandomNumbersFacade;
 
 public class AppRunner {
 
-    public static void main(String[] args) throws ExceptionChecksDataFormat {
+    public static void main(String[] args) throws ExceptionChecksIntegerFormat {
 
         Numbers numbers = new Numbers();
         //numbers.method();

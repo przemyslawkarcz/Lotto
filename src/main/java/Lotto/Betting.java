@@ -1,26 +1,25 @@
 package Lotto;
 
-import Lotto.Inspect.ExceptionChecksDataFormat;
-import Lotto.Inspect.Verify;
+import Lotto.Inspect.ExceptionChecksIntegerFormat;
+import Lotto.Inspect.VerificationIntegers;
 
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class Betting {
 
-    public void bettingNumber () throws ExceptionChecksDataFormat {
+    public void bettingNumber () throws ExceptionChecksIntegerFormat {
 
         System.out.println("* * * Enter the number of bets to be placed * * *");
         System.out.print("No. of bets: ");
 
         Scanner scanner = new Scanner(System.in);
-        Verify verify = new Verify();
+        VerificationIntegers verificationIntegers = new VerificationIntegers();
 
         int noOfBetsGivenByUser = 0;
 
         try {
-            noOfBetsGivenByUser = Verify.checksIfNumberIsInteger(scanner.nextLine());
-        }catch (ExceptionChecksDataFormat exceptionChecksDataFormat){
+            noOfBetsGivenByUser = VerificationIntegers.checksIfNumberIsInteger(scanner.nextLine());
+        }catch (ExceptionChecksIntegerFormat exceptionChecksDataFormat){
             exceptionChecksDataFormat.getFriendlyMessage();
             return ;//xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         }
@@ -41,7 +40,7 @@ public class Betting {
                 System.out.print("integer " + (++counterOfIntegers) + ": ");
                 String number1_49GivenByUser = scanner.nextLine();
 
-                verify.checksIfNumberIsInteger(number1_49GivenByUser);
+                verificationIntegers.checksIfNumberIsInteger(number1_49GivenByUser);
 
                 //verify.checksIfNumbersAreInRange1_49(number1_49GivenByUser);
 
