@@ -1,4 +1,4 @@
-package Lotto;
+package Lotto.RandomNumbers;
 
 import java.util.HashSet;
 import java.util.Random;
@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class RandomNumbers {
 
-    public int[] generatesRandomNumbers(){
+    protected int[] generatesSixUniqueRandomNumbers(){
 
         Set<Integer> betNumbers = new HashSet<>();
 
@@ -32,7 +32,6 @@ public class RandomNumbers {
         System.out.println("The drawn numbers are: ");
 
         for (int i:chosenNumbersArray) {
-
 
             System.out.print(i + "|");
 

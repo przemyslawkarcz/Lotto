@@ -1,6 +1,8 @@
 package Lotto;
 
 import Lotto.Inspect.ExceptionChecksDataFormat;
+import Lotto.RandomNumbers.RandomNumbers;
+import Lotto.RandomNumbers.RandomNumbersFacade;
 
 public class AppRunner {
 
@@ -10,10 +12,10 @@ public class AppRunner {
         //numbers.method();
 
         Betting betting = new Betting();
-        betting.bettingNumber();
+        //betting.bettingNumber();
 
-        RandomNumbers randomNumbers = new RandomNumbers();
-        //randomNumbers.generatesRandomNumbers();
+        RandomNumbersFacade randomNumbersFacade = new RandomNumbersFacade();
+        randomNumbersFacade.getSixRandomNumbers();
 
 
     }
