@@ -11,7 +11,7 @@ public class AppRunner {
         //numbers.method();
 
         Betting betting = new Betting();
-        //betting.bettingNumber();
+        betting.bettingNumber();
 
         RandomNumbersFacade randomNumbersFacade = new RandomNumbersFacade();
         randomNumbersFacade.getSixRandomNumbers();

@@ -2,6 +2,8 @@ package Lotto;
 
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
 import Lotto.Inspect.VerificationIntegers;
+import Lotto.UserDataInput.BetsNumber;
+import Lotto.UserDataInput.BetsNumberFacade;
 
 import java.util.Scanner;
 
@@ -9,20 +11,25 @@ public class Betting {
 
     public void bettingNumber () throws ExceptionChecksIntegerFormat {
 
-        System.out.println("* * * Enter the number of bets to be placed * * *");
+        /*System.out.println("* * * Enter the number of bets to be placed * * *");
         System.out.print("No. of bets: ");
 
         Scanner scanner = new Scanner(System.in);
-        VerificationIntegers verificationIntegers = new VerificationIntegers();
+        VerificationIntegers verificationIntegers = new VerificationIntegers();*/
 
         int noOfBetsGivenByUser = 0;
 
-        try {
-            noOfBetsGivenByUser = VerificationIntegers.checksIfNumberIsInteger(scanner.nextLine());
+        /*try {
+            noOfBetsGivenByUser = verificationIntegers.checksIfNumberIsInteger(scanner.nextLine());
         }catch (ExceptionChecksIntegerFormat exceptionChecksDataFormat){
             exceptionChecksDataFormat.getFriendlyMessage();
-            return ;//xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-        }
+            return;
+        }*/
+
+        BetsNumberFacade betsNumberFacade = new BetsNumberFacade();
+        noOfBetsGivenByUser = betsNumberFacade.getBetsNumber();
+
+
 
         int counterOfBets = 0;
         int counterOfIntegers = 0;
@@ -35,7 +42,7 @@ public class Betting {
             counterOfBets++;
 
             System.out.println();
-            for (int j = 0; j < 6; j++) {
+            /*for (int j = 0; j < 6; j++) {
 
                 System.out.print("integer " + (++counterOfIntegers) + ": ");
                 String number1_49GivenByUser = scanner.nextLine();
@@ -44,7 +51,7 @@ public class Betting {
 
                 //verify.checksIfNumbersAreInRange1_49(number1_49GivenByUser);
 
-            }
+            }*/
 
 
         }

@@ -2,7 +2,7 @@ package Lotto.Inspect;
 
 public class VerificationIntegers {
 
-    public static int checksIfNumberIsInteger(String numberToCheck) throws ExceptionChecksIntegerFormat {
+    public int checksIfNumberIsInteger(String numberToCheck) throws ExceptionChecksIntegerFormat {
 
         try {
 
@@ -13,7 +13,6 @@ public class VerificationIntegers {
             throw new ExceptionChecksIntegerFormat(numberToCheck);
 
         }
-
     }
 
 }
