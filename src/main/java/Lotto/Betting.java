@@ -13,7 +13,7 @@ public class Betting {
         noOfBetsGivenByUser = numberFacade.getBetsNumber();
 
         int counterOfBets = 0;
-        int counterOfIntegers = 0;
+
 
         for (int i = 0; i < noOfBetsGivenByUser; i++) {
 
@@ -21,6 +21,8 @@ public class Betting {
             System.out.print(" - Bet " + (counterOfBets + 1) + " - ");
 
             counterOfBets++;
+
+            int counterOfIntegers = 0;
 
             System.out.println();
             for (int j = 0; j < 6; j++) {
