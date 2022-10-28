@@ -14,7 +14,6 @@ public class Betting {
 
         int counterOfBets = 0;
 
-
         for (int i = 0; i < noOfBetsGivenByUser; i++) {
 
             System.out.println("* * * Enter 6 integers (1-49) for " + (counterOfBets + 1) + " bet * * *" );
