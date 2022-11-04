@@ -15,21 +15,34 @@ public class RepeatedNumbers {
 
     protected static int checkForSameNumbers (){
 
-        System.out.println("Your int: ");
         Scanner scanner = new Scanner(System.in);
 
         Integer [] tabWithInts = new Integer[]{0, 0, 0, 0, 0, 0};
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < tabWithInts.length; i++) {
 
-            System.out.println();
+            System.out.print("\nYour int no. " + (i+1) + ": " );
             int nextInt = scanner.nextInt();
+
+
+            if (tabWithInts[i] != nextInt){
+
+            }else {
+
+                System.out.println("JEST!");
+
+            }
 
             tabWithInts[i] = nextInt;
 
+            System.out.println("Your numbers: ");
+
             for (Integer integer:tabWithInts) {
                 System.out.print(integer + "|");
+
             }
+
+
 
         }
 
