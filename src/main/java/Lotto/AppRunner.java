@@ -7,9 +7,6 @@ public class AppRunner {
 
     public static void main(String[] args) throws ExceptionChecksIntegerFormat {
 
-        Numbers numbers = new Numbers();
-        //numbers.method();
-
         Betting betting = new Betting();
         betting.bettingNumber();
 

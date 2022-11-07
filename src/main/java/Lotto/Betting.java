@@ -26,7 +26,7 @@ public class Betting {
             System.out.println();
             for (int j = 0; j < 6; j++) {
 
-                System.out.print("integer " + (++counterOfIntegers) + ": ");
+                System.out.print("Integer " + (++counterOfIntegers) + ": ");
 
                 numberFacade.getNumberFromRange();
 

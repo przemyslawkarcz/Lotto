@@ -1,11 +1,18 @@
-package Lotto.Inspect;
+package Lotto;
 
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class RepeatedNumbers {
+public class DoCwiczen05 {
 
-    protected int[] checkForSameNumbers (){
+    public static void main(String[] args) {
+
+        DoCwiczen05 doCwiczen05 = new DoCwiczen05();
+        doCwiczen05.checkForSameNumbers();
+
+    }
+
+    public void checkForSameNumbers (){
 
         Scanner scanner = new Scanner(System.in);
 
@@ -41,7 +48,6 @@ public class RepeatedNumbers {
 
         }
 
-        return enteredIntsArray;
     }
 
 }
