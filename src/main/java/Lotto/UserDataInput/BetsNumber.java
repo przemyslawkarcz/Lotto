@@ -1,6 +1,7 @@
 package Lotto.UserDataInput;
 
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
+import Lotto.Inspect.VerificationBetsRange;
 import Lotto.Inspect.VerificationIntegers;
 import java.util.Scanner;
 
@@ -13,6 +14,7 @@ public class BetsNumber {
 
         Scanner scanner = new Scanner(System.in);
         VerificationIntegers verificationIntegers = new VerificationIntegers();
+        VerificationBetsRange verificationBetsRange = new VerificationBetsRange();
 
         int noOfBetsGivenByUser = 0;
 
@@ -27,7 +29,8 @@ public class BetsNumber {
             System.exit(0);
         }
 
-        return noOfBetsGivenByUser;
+        return verificationBetsRange.checksIfBetsNumberIsInRange(noOfBetsGivenByUser);
+
     }
 
 }
