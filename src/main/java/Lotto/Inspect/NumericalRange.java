@@ -1,7 +1,5 @@
-package Lotto.UserDataInput;
+package Lotto.Inspect;
 
-import Lotto.Inspect.ExceptionChecksIntegerFormat;
-import Lotto.Inspect.VerificationIntegers;
 import java.util.Scanner;
 
 public class NumericalRange {
