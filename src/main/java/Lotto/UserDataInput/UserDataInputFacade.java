@@ -2,7 +2,7 @@ package Lotto.UserDataInput;
 
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
 
-public class NumberFacade {
+public class UserDataInputFacade {
 
     public int getBetsNumber () throws ExceptionChecksIntegerFormat {
 
