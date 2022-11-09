@@ -1,6 +1,7 @@
 package Lotto.UserDataInput;
 
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
+import Lotto.Inspect.NumericalRange;
 
 public class UserDataInputFacade {
 
@@ -9,14 +10,6 @@ public class UserDataInputFacade {
         BetsNumber betsNumber = new BetsNumber();
 
         return betsNumber.checksBetsNumber();
-
-    }
-
-    public int getNumberFromRange () throws ExceptionChecksIntegerFormat {
-
-        NumericalRange numericalRange = new NumericalRange();
-
-        return numericalRange.checksNumberRange();
 
     }
 
