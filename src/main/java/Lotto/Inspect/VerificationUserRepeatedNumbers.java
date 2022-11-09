@@ -3,9 +3,16 @@ package Lotto.Inspect;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class RepeatedNumbers {
+public class VerificationUserRepeatedNumbers {
 
-    protected int[] checkForSameNumbers (){
+    public static void main(String[] args) {
+
+        checkForSameNumbersOriginal();
+
+
+    }
+
+    protected static int[] checkForSameNumbersOriginal(){
 
         Scanner scanner = new Scanner(System.in);
 
@@ -44,4 +51,31 @@ public class RepeatedNumbers {
         return enteredIntsArray;
     }
 
+    protected static int[] checkForSameNumbersBetaVersion(int someInt){
+
+        int [] enteredIntsArray = new int[6];
+
+        HashSet<Integer> setEnteredInts = new HashSet<>();
+
+        for (int i = 0; i < enteredIntsArray.length; i++) {
+
+            System.out.print("\nNumber " + (i+1) + ": ");
+
+            enteredIntsArray[i] = someInt;
+
+            setEnteredInts.add(someInt);
+
+            int setEnteredIntsSize = setEnteredInts.size();
+
+            if (setEnteredIntsSize != (i+1)){
+
+                System.out.println("\nNumbers cannot repeat themselves! We only list unique numbers! Start again :)");
+                System.exit(0);
+
+            }
+
+        }
+
+        return enteredIntsArray;
+    }
 }

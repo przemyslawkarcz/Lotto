@@ -2,7 +2,7 @@ package Lotto.Inspect;
 
 import java.util.Scanner;
 
-public class NumericalRange {
+public class VerificationUserNumberRange {
 
     protected int checksNumberRange() throws ExceptionChecksIntegerFormat {
 

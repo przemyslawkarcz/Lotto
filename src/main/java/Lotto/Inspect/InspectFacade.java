@@ -4,10 +4,18 @@ public class InspectFacade {
 
     public int getNumberFromRange () throws ExceptionChecksIntegerFormat {
 
-        NumericalRange numericalRange = new NumericalRange();
+        VerificationUserNumberRange verificationUserNumberRange = new VerificationUserNumberRange();
 
-        return numericalRange.checksNumberRange();
+        return verificationUserNumberRange.checksNumberRange();
 
+    }
+
+    public int getRepeatedUserNumbers () {
+
+        VerificationUserRepeatedNumbers verificationUserRepeatedNumbers = new VerificationUserRepeatedNumbers();
+        verificationUserRepeatedNumbers.checkForSameNumbersOriginal();
+
+        return 0;
     }
 
 }
