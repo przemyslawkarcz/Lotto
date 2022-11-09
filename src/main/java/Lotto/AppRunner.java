@@ -2,6 +2,7 @@ package Lotto;
 
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
 import Lotto.RandomNumbers.RandomNumbersFacade;
+import Lotto.UserDataInput.Betting;
 
 public class AppRunner {
 

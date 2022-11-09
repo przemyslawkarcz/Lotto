@@ -1,7 +1,7 @@
-package Lotto;
+package Lotto.UserDataInput;
 
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
-import Lotto.UserDataInput.NumberFacade;
+import Lotto.Inspect.InspectFacade;
 
 public class Betting {
 
@@ -9,8 +9,9 @@ public class Betting {
 
         int noOfBetsGivenByUser = 0;
 
-        NumberFacade numberFacade = new NumberFacade();
-        noOfBetsGivenByUser = numberFacade.getBetsNumber();
+        UserDataInputFacade userDataInputFacade = new UserDataInputFacade();
+        noOfBetsGivenByUser = userDataInputFacade.getBetsNumber();
+        InspectFacade inspectFacade = new InspectFacade();
 
         int counterOfBets = 0;
 
@@ -28,7 +29,7 @@ public class Betting {
 
                 System.out.print("Integer " + (++counterOfIntegers) + ": ");
 
-                numberFacade.getNumberFromRange();
+                inspectFacade.getNumberFromRange();
 
             }
 
