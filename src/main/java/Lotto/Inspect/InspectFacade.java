@@ -2,20 +2,28 @@ package Lotto.Inspect;
 
 public class InspectFacade {
 
-    public int getNumberFromRange () throws ExceptionChecksIntegerFormat {
+    public int getVerifiedIntegers (String verifiedInteger) throws ExceptionChecksIntegerFormat {
 
-        VerificationUserNumberRange verificationUserNumberRange = new VerificationUserNumberRange();
+        VerificationIntegers verificationIntegers = new VerificationIntegers();
 
-        return verificationUserNumberRange.checksNumberRange();
+        return verificationIntegers.checksIfNumberIsInteger(verifiedInteger);
 
     }
 
-    public int getRepeatedUserNumbers () {
+    public int getVerifiedBetsRange (Integer verifiedBetsRange) {
 
-        VerificationUserRepeatedNumbers verificationUserRepeatedNumbers = new VerificationUserRepeatedNumbers();
-        verificationUserRepeatedNumbers.checkForSameNumbersOriginal();
+        VerificationBetsRange verificationBetsRange = new VerificationBetsRange();
 
-        return 0;
+        return verificationBetsRange.checksIfBetsNumberIsInRange(verifiedBetsRange);
+
+    }
+
+    public int getVerifiedUserNumberRange (Integer verifiedUserNumberRange) {
+
+        VerificationUserNumberRange verificationUserNumberRange = new VerificationUserNumberRange();
+
+        return verificationUserNumberRange.checksUserNumberRange(verifiedUserNumberRange);
+
     }
 
 }

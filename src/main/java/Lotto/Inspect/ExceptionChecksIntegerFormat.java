@@ -10,6 +10,7 @@ public class ExceptionChecksIntegerFormat extends Exception{
 
         System.out.println("The entered data '" + friendlyMessage + "' is not an integer.");
         System.out.println("The game has been stopped! To play restart game :)");
+        System.exit(0);
 
     }
 

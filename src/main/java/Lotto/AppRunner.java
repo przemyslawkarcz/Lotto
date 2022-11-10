@@ -2,18 +2,17 @@ package Lotto;
 
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
 import Lotto.RandomNumbers.RandomNumbersFacade;
-import Lotto.UserDataInput.UserNumbers;
+import Lotto.UserDataInput.UserDataInputFacade;
 
 public class AppRunner {
 
     public static void main(String[] args) throws ExceptionChecksIntegerFormat {
 
-        UserNumbers userNumbers = new UserNumbers();
-        userNumbers.bettingNumber();
-
+        UserDataInputFacade userDataInputFacade = new UserDataInputFacade();
         RandomNumbersFacade randomNumbersFacade = new RandomNumbersFacade();
-        randomNumbersFacade.getSixRandomNumbers();
 
+        userDataInputFacade.getUserBetsNumbers();
+        randomNumbersFacade.getSixRandomNumbers();
 
     }
 

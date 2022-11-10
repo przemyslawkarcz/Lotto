@@ -1,35 +1,25 @@
 package Lotto.UserDataInput;
 
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
-import Lotto.Inspect.VerificationBetsRange;
-import Lotto.Inspect.VerificationIntegers;
+import Lotto.Inspect.InspectFacade;
+
 import java.util.Scanner;
 
 public class BetsNumber {
 
     protected int checksBetsNumber() throws ExceptionChecksIntegerFormat {
 
-        System.out.println("* * * Enter the number of bets to be placed * * *");
+        System.out.println("* * * Enter the number of bets to be placed (up to 3 bets by default) * * *");
         System.out.print("No. of bets: ");
 
         Scanner scanner = new Scanner(System.in);
-        VerificationIntegers verificationIntegers = new VerificationIntegers();
-        VerificationBetsRange verificationBetsRange = new VerificationBetsRange();
+        InspectFacade inspectFacade = new InspectFacade();
 
-        int noOfBetsGivenByUser = 0;
+        int verifiedIntegers = inspectFacade.getVerifiedIntegers(scanner.nextLine());
 
-        try {
+        int verifiedBetsRange = inspectFacade.getVerifiedBetsRange(verifiedIntegers);
 
-            noOfBetsGivenByUser = verificationIntegers.checksIfNumberIsInteger(scanner.nextLine());
-
-        } catch (ExceptionChecksIntegerFormat exceptionChecksIntegerFormat) {
-
-            exceptionChecksIntegerFormat.getFriendlyMessage();
-
-            System.exit(0);
-        }
-
-        return verificationBetsRange.checksIfBetsNumberIsInRange(noOfBetsGivenByUser);
+        return verifiedBetsRange;
 
     }
 
