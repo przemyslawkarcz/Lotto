@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class UserNumber {
 
-    protected void bettingNumber() throws ExceptionChecksIntegerFormat {
+    protected int[] bettingNumber() throws ExceptionChecksIntegerFormat {
 
         UserDataInputFacade userDataInputFacade = new UserDataInputFacade();
         InspectFacade inspectFacade = new InspectFacade();
@@ -17,9 +17,9 @@ public class UserNumber {
 
         int counterOfBets = 0;
 
-        for (int i = 0; i < betsNumber; i++) {
+        int [] enteredIntsArray = new int[6];
 
-            int [] enteredIntsArray = new int[6];
+        for (int i = 0; i < betsNumber; i++) {
 
             HashSet<Integer> setEnteredInts = new HashSet<>();
 
@@ -39,7 +39,7 @@ public class UserNumber {
 
                 int verifiedUserNumberRange = inspectFacade.getVerifiedUserNumberRange(verifiedIntegers);
 
-                enteredIntsArray[i] = verifiedUserNumberRange;
+                enteredIntsArray[j] = verifiedUserNumberRange;
 
                 setEnteredInts.add(verifiedUserNumberRange);
 
@@ -52,15 +52,16 @@ public class UserNumber {
 
             }
 
-            //xxxxxxxxxxxxxxxxxxxxxxxxxx 10.11.2022
-            //metoda powinna zwracać tablicę z danymi użytkownika
-            /*System.out.println("Entered user numbers in the " + counterOfBets + " bet/s:");
+            //xxxxxxxxxxxxxxxxxxxxxxxxxx 14.11.2022
+            //metoda zwraca już tablicę z danymi użytkownika
+            System.out.println("\n* * * Entered user numbers in the " + counterOfBets + " bet/s: * * *");
             for (int enteredUserNumber:enteredIntsArray) {
                 System.out.print(enteredUserNumber + "|");
-            }*/
+            }
 
         }
 
+        return enteredIntsArray;
     }
 
 }
