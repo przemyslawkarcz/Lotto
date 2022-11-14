@@ -24,7 +24,7 @@ public class NumbersList {
                 if (userNumberArray[i] == machineNumberArray[j]){
 
                     System.out.println("Jest, pod indeksem: " + i);
-
+                    // 14.11.2022 tu skonczylem
                 }
 
             }
