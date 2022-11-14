@@ -11,8 +11,8 @@ public class AppRunner {
         UserDataInputFacade userDataInputFacade = new UserDataInputFacade();
         RandomNumbersFacade randomNumbersFacade = new RandomNumbersFacade();
 
-        userDataInputFacade.getUserBetsNumbers();
-        randomNumbersFacade.getSixRandomNumbers();
+        int[] userBetsNumbers = userDataInputFacade.getUserBetsNumbers();
+        int[] sixRandomNumbers = randomNumbersFacade.getSixRandomNumbers();
 
     }
 
