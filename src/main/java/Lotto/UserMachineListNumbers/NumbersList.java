@@ -4,7 +4,7 @@ public class NumbersList {
 
     protected void comparesUserNumbersWithRandomOnes (int[] userNumberArray, int[] machineNumberArray) {
 
-        System.out.println("* * * Your lucky numbers are: * * *");
+        System.out.println("\n\n* * * Your lucky numbers are: * * *");
 
         int hitsCounter = 0;
 
