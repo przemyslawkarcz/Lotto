@@ -58,6 +58,8 @@ public class UserNumber {
             for (int enteredUserNumber:enteredIntsArray) {
                 System.out.print(enteredUserNumber + "|");
             }
+            System.out.println();
+            System.out.println();
 
         }
 
