@@ -51,9 +51,7 @@ public class UserNumber {
                 }
 
             }
-
-            //xxxxxxxxxxxxxxxxxxxxxxxxxx 14.11.2022
-            //metoda zwraca już tablicę z danymi użytkownika
+            
             System.out.println("\n* * * Entered user numbers in the " + counterOfBets + " bet/s: * * *");
             for (int enteredUserNumber:enteredIntsArray) {
                 System.out.print(enteredUserNumber + "|");
