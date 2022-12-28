@@ -13,7 +13,7 @@ public class AppRunner {
         RandomNumbersFacade randomNumbersFacade = new RandomNumbersFacade();
         UserMachineListNumbersFacade userMachineListNumbersFacade = new UserMachineListNumbersFacade();
 
-        int[] userBetsNumbers = userDataInputFacade.getUserBetsNumbers();
+        int[][] userBetsNumbers = userDataInputFacade.getUserBetsNumbers();
         int[] sixRandomNumbers = randomNumbersFacade.getSixRandomNumbers();
 
         userMachineListNumbersFacade.getResultsOfDraw(userBetsNumbers, sixRandomNumbers);

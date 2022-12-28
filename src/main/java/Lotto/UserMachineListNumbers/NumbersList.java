@@ -2,7 +2,7 @@ package Lotto.UserMachineListNumbers;
 
 public class NumbersList {
 
-    protected void comparesUserNumbersWithRandomOnes (int[] userNumberArray, int[] machineNumberArray) {
+    protected void comparesUserNumbersWithRandomOnes (int[][] userNumberArray, int[] machineNumberArray) {
 
         System.out.println("\n\n* * * Your lucky numbers are: * * *");
 

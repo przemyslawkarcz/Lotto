@@ -12,11 +12,11 @@ public class UserDataInputFacade {
 
     }
 
-    public int[] getUserBetsNumbers() throws ExceptionChecksIntegerFormat {
+    public int[][] getUserBetsNumbers() throws ExceptionChecksIntegerFormat {
 
         UserNumber userNumber = new UserNumber();
 
-        int[] bettingNumber = userNumber.bettingNumber();
+        int[][] bettingNumber = userNumber.bettingNumber();
 
         return bettingNumber;
 

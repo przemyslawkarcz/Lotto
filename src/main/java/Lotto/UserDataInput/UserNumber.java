@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class UserNumber {
 
-    protected int[] bettingNumber() throws ExceptionChecksIntegerFormat {
+    protected int[][] bettingNumber() throws ExceptionChecksIntegerFormat {
 
         UserDataInputFacade userDataInputFacade = new UserDataInputFacade();
         InspectFacade inspectFacade = new InspectFacade();
@@ -75,7 +75,7 @@ public class UserNumber {
             System.out.println();
         }
 
-        return enteredIntsArray;
+        return bettingScoreboard2D;
     }
 
 }
