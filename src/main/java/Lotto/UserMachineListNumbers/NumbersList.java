@@ -8,6 +8,9 @@ public class NumbersList {
 
         int hitsCounter = 0;
 
+
+
+        /*
         for (int i = 0; i < userNumberArray.length; i++) {
 
             for (int j = 0; j < machineNumberArray.length; j++) {
@@ -22,7 +25,7 @@ public class NumbersList {
 
             }
 
-        }
+        }*/
 
         if (hitsCounter == 0){
 
