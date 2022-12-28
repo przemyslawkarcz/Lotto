@@ -1,6 +1,5 @@
 package Lotto.UserDataInput;
 
-import Lotto.DoCwiczen01;
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
 import Lotto.Inspect.InspectFacade;
 import java.util.HashSet;
