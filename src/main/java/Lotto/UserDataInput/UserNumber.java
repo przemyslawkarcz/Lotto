@@ -1,5 +1,6 @@
 package Lotto.UserDataInput;
 
+import Lotto.DoCwiczen01;
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
 import Lotto.Inspect.InspectFacade;
 import java.util.HashSet;
@@ -17,9 +18,12 @@ public class UserNumber {
 
         int counterOfBets = 0;
 
-        int [] enteredIntsArray = new int[6];
+        int [][] bettingScoreboard2D = new int[betsNumber][];
+        int [] enteredIntsArray = new int[0];
 
         for (int i = 0; i < betsNumber; i++) {
+
+            enteredIntsArray = new int[6];
 
             HashSet<Integer> setEnteredInts = new HashSet<>();
 
@@ -51,7 +55,7 @@ public class UserNumber {
                 }
 
             }
-            
+
             System.out.println("\n* * * Entered user numbers in the " + counterOfBets + " bet/s: * * *");
             for (int enteredUserNumber:enteredIntsArray) {
                 System.out.print(enteredUserNumber + "|");
@@ -59,6 +63,17 @@ public class UserNumber {
             System.out.println();
             System.out.println();
 
+            bettingScoreboard2D[i] = enteredIntsArray;
+
+        }
+
+        System.out.println("* * * Summary of all " + counterOfBets + " client bets * * *");
+        for (int i = 0; i < bettingScoreboard2D.length; i++) {
+            System.out.print("Bet " + (i+1) + ": ");
+            for (int j = 0; j < bettingScoreboard2D[i].length; j++) {
+                System.out.print(bettingScoreboard2D[i][j] + "|");
+            }
+            System.out.println();
         }
 
         return enteredIntsArray;
