@@ -6,30 +6,28 @@ public class NumbersList {
 
         System.out.println("\n\n* * * Your lucky numbers are: * * *");
 
-        int hitsCounter = 0;
-
-
-
-        /*
         for (int i = 0; i < userNumberArray.length; i++) {
 
-            for (int j = 0; j < machineNumberArray.length; j++) {
+            int hitsCounter = 0;
 
-                if (userNumberArray[i] == machineNumberArray[j]){
+            System.out.print("Bet " + (i + 1) + ": (");
 
-                    hitsCounter++;
+            for (int j = 0; j < userNumberArray[i].length; j++) {
 
-                    System.out.print(userNumberArray[i] + "|");
+                for (int k = 0; k < machineNumberArray.length; k++) {
+
+                    if (userNumberArray[i][j] == machineNumberArray[k]) {
+
+                        hitsCounter++;
+                        System.out.print(machineNumberArray[k] + ", ");
+
+                    }
 
                 }
 
             }
 
-        }*/
-
-        if (hitsCounter == 0){
-
-            System.out.println("* * * No hits! * * *");
+            System.out.println(") -" + hitsCounter + " hit/s: ");
 
         }
 
