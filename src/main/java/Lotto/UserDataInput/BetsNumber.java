@@ -2,7 +2,6 @@ package Lotto.UserDataInput;
 
 import Lotto.Inspect.ExceptionChecksIntegerFormat;
 import Lotto.Inspect.InspectFacade;
-
 import java.util.Scanner;
 
 public class BetsNumber {
