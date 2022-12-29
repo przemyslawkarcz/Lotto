@@ -1,10 +1,10 @@
 # Lotto
 
-Lotto - is a junior level number game demo application written in Java X.X.
+Lotto - is a junior level number game application written in Java 8.
 
 The purpose of the application is to model a game in which 6 numbers 
 are drawn from the pool of numbers from 1 to 49.
-The player has the option to buy from 1 to several bets. 
+The player has the option to buy from 1 to 3 bets. 
 
 To start, go to the Lotto.AppRunner class.
 
