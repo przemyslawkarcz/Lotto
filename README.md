@@ -9,7 +9,7 @@ The player has the option to buy from 1 to 3 bets.
 To start, go to the Lotto.AppRunner class.
 
 Technologies used in the project are: IDE - IntelliJ Idea Community; Maven; Java - 1.8; 
-TDD.
+TDD, Clean Code.
 
 Contact data:
 
