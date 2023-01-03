@@ -148,5 +148,5 @@ public class RandomNumbersTest {
         Assertions.assertTrue(b);
 
     }
-    
+
 }
