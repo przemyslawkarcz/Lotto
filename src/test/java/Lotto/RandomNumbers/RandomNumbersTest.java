@@ -55,8 +55,8 @@ public class RandomNumbersTest {
         RandomNumbers randomNumbers = new RandomNumbers();
         int[] intsArray04 = randomNumbers.generatesSixUniqueRandomNumbers();
 
-        int someValue = intsArray04[0];
-        
+        int someValue = intsArray04[4];
+
         boolean b = false;
 
         if (someValue>=1 && someValue<=49){
@@ -68,4 +68,85 @@ public class RandomNumbersTest {
         Assertions.assertTrue(b);
 
     }
+
+    @Test
+    public void generatesSixUniqueRandomNumbersTest05(){
+
+        RandomNumbers randomNumbers = new RandomNumbers();
+        int[] intsArray05 = randomNumbers.generatesSixUniqueRandomNumbers();
+
+        int someValue = intsArray05[3];
+
+        boolean b = false;
+
+        if (someValue>=1 && someValue<=49){
+
+            b = true;
+
+        }
+
+        Assertions.assertTrue(b);
+
+    }
+
+    @Test
+    public void generatesSixUniqueRandomNumbersTest06(){
+
+        RandomNumbers randomNumbers = new RandomNumbers();
+        int[] intsArray06 = randomNumbers.generatesSixUniqueRandomNumbers();
+
+        int someValue = intsArray06[2];
+
+        boolean b = false;
+
+        if (someValue>=1 && someValue<=49){
+
+            b = true;
+
+        }
+
+        Assertions.assertTrue(b);
+
+    }
+
+    @Test
+    public void generatesSixUniqueRandomNumbersTest07(){
+
+        RandomNumbers randomNumbers = new RandomNumbers();
+        int[] intsArray07 = randomNumbers.generatesSixUniqueRandomNumbers();
+
+        int someValue = intsArray07[1];
+
+        boolean b = false;
+
+        if (someValue>=1 && someValue<=49){
+
+            b = true;
+
+        }
+
+        Assertions.assertTrue(b);
+
+    }
+
+    @Test
+    public void generatesSixUniqueRandomNumbersTest08(){
+
+        RandomNumbers randomNumbers = new RandomNumbers();
+        int[] intsArray08 = randomNumbers.generatesSixUniqueRandomNumbers();
+
+        int someValue = intsArray08[0];
+
+        boolean b = false;
+
+        if (someValue>=1 && someValue<=49){
+
+            b = true;
+
+        }
+
+        Assertions.assertTrue(b);
+
+    }
+    
 }
