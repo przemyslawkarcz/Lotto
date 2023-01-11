@@ -2,13 +2,15 @@ package Lotto.UserMachineListNumbers;
 
 public class NumbersList {
 
-    protected void comparesUserNumbersWithRandomOnes (int[][] userNumberArray, int[] machineNumberArray) {
+    protected int comparesUserNumbersWithRandomOnes (int[][] userNumberArray, int[] machineNumberArray) {
 
         System.out.println("\n\n* * * Your lucky numbers are: * * *");
 
+        int hitsCounter = 0;
+
         for (int i = 0; i < userNumberArray.length; i++) {
 
-            int hitsCounter = 0;
+            hitsCounter = 0;
 
             System.out.print("Bet " + (i + 1) + ": (");
 
@@ -27,10 +29,11 @@ public class NumbersList {
 
             }
 
-            System.out.println(") -" + hitsCounter + " hit/s: ");
+            System.out.println(") -> " + hitsCounter + " hit/s: ");
 
         }
 
+        return hitsCounter;
     }
 
 }
