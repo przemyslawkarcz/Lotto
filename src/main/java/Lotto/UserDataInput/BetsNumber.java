@@ -16,9 +16,7 @@ public class BetsNumber {
 
         int verifiedIntegers = inspectFacade.getVerifiedIntegers(scanner.nextLine());
 
-        int verifiedBetsRange = inspectFacade.getVerifiedBetsRange(verifiedIntegers);
-
-        return verifiedBetsRange;
+        return inspectFacade.getVerifiedBetsRange(verifiedIntegers);
 
     }
 
